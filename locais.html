@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Projeto Bootstrap</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="loginEmail">Email</label>
+                                <input type="email" class="form-control" id="loginEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginSenha">Senha</label>
+                                <input type="password" class="form-control" id="loginSenha">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+                            <small class="form-text text-muted">
+                                Esqueceru a senha <a href="#">clique aqui</a>
+                            </small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/caravan.svg" alt="Caravan">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        id="navbarDropdown" data-toggle="dropdown">
+                            Locais
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="locais.html">California</a>
+                            <a class="dropdown-item" href="locais.html">Paris</a>
+                            <a class="dropdown-item" href="locais.html">Dublin</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="planos.html" class="nav-link">Planos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Contato.html" class="nav-link">Contato</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="inscricao.html" 
+                        class="btn btn-outline-primary ml-md-4">inscreva-se</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        
+        <footer class="bg-dark text-white">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6 class="h6">PÁGINAS</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="planos.html">planos</a></li>
+                            <li><a href="Contato.html">Contato</a></li>
+                            <li><a href="inscricao.html">inscricao</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="h6">LOCAIS</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="planos.html">California</a></li>
+                            <li><a href="Contato.html">Paris</a></li>
+                            <li><a href="inscricao.html">Dublin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="h6">DADOS DE CONTATO</h6>
+                        <ul class="list-unstyled text-secondary">
+                            <li>caravan@caravan.com.br</li>
+                            <li>21 99999-9999</li>
+                            <li>De Seg. à Sex. das 8h às 18h</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="h6">REDES SOCIAIS</h6>
+                        <ul class="list-unstyled list-group-sm">
+                            <li><a class="btn btn-outline-secondary btn-sm d-block mb-2" 
+                                href="#" style="max-width:140px">Facebook</a></li>
+                            <li><a class="btn btn-outline-secondary btn-sm d-block mb-2" 
+                                href="#" style="max-width:140px">youtube</a></li>
+                            <li><a class="btn btn-outline-secondary btn-sm d-block mb-2"
+                                href="#" style="max-width:140px">Twitter</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 bg-primary text-center py-3">
+                <span>
+                    Caravan &copy 2017. Alguns direitos reservados.
+                </span>
+            </div>
+        </footer>
+        
+
+        <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
