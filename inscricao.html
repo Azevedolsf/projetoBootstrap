@@ -94,11 +94,71 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <form class="col-lg-6" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Nome</label>
+            <input type="text" id="inputName" class="form-control " placeholder="Nome Completo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCPF">CPF</label>
+            <input type="text" id="inputEmail" class="form-control " placeholder="xxx.xxx.xxx-xx">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" class="form-control " placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSenha">Senha</label>
+            <input type="password" id="inputSenha" class="form-control " placeholder="Senha">
+          </div>
+          <div class="form-group col-12">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" id="inputEndereco" class="form-control col-12" placeholder="Nome da rua, Número e Bairro">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" id="inputCidade" class="form-control" placeholder="">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCidade">Estado</label>
+            <select class="form-control" id="inputEstado">
+              <option selected>Escolha um Estado</option>
+              <option value="1">Rio de Janeiro</option>
+              <option value="2">São Paulo</option>
+              <option value="3">Brasilia</option>
+              <option value="4">Bahia</option>
+              <option value="5">Espirito Santo</option>
+              <option value="6">Acre</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCep">CEP</label>
+            <input type="text" id="inputCidade" class="form-control" placeholder="xxxxx-xxx">
+          </div>
+        </div>
 
-      </div>
+        <div class="bg-light rounded p-3">
+          <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+          <div class="form-group col-md-6">
+            <label for="inputCartao">Nome do Cartão</label>
+            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputCartao">Mês</label>
+            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputCartao">ano</label>
+            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
+          </div>
 
-      <div class="col-md-5">
+
+        </div>
+
+      </form>
+
+      <div class="col-lg-5">
         <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
         <div class="bg-light rounded p-4 box-shadow">
           <h2 class="">Platinum <span class="badge badge-success">Novo</span></h2>
@@ -123,9 +183,6 @@
         </div>
       </div>
     </div>
-
-
-
   </section>
 
 
