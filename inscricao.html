@@ -94,7 +94,7 @@
     </div>
 
     <div class="row">
-      <form class="col-lg-6" action="">
+      <form class="col-lg-6 mb-5" action="">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputName">Nome</label>
@@ -138,28 +138,86 @@
           </div>
         </div>
 
-        <div class="bg-light rounded p-3">
-          <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
-          <div class="form-group col-md-6">
-            <label for="inputCartao">Nome do Cartão</label>
-            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="inputCartao">Mês</label>
-            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="inputCartao">ano</label>
-            <input type="text" id="inputCartao" placeholder="Nome impresso no cartão">
-          </div>
+        <div class="bg-light rounded p-3 box-shadow form-group">
 
+          <h2 class="h6 text-primary">FORMAS DE PAGAMENTO</h2>
 
+          <nav class="nav btn-group" if="formaPagamento" role="tablist">
+            <button type="button" class="btn btn-secondary active btn-sm" id="nav-cartao-tab" data-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+            <button type="button" class="btn btn-secondary btn-sm id=" nav-boleto-tab" data-toggle="tab" href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto Bancário</button>
+          </nav>
+          <div class="tab-content" id="formaPagamentoConteudo">
+            <div class="tab-pane fade show active py-4" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCartao">Nome no Cartão</label>
+                  <input class="form-control" type="text" id="inputCartao" placeholder="Nome impresso no cartão">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputMes">Mês</label>
+                  <select class="form-control text-center" type="text" id="inputMes" placeholder="Expira Mês">
+                    <option value="">Expira mês</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputAno">Ano</label>
+                  <select class="form-control" type="" id="inputCartao" placeholder="Expira Ano">
+                    <option value="">Expira Ano</option>
+                    <option value="">Janeiro</option>
+                    <option value="">Fevereiro</option>
+                    <option value="">Março</option>
+                    <option value="">Abril</option>
+                    <option value="">Maio</option>
+                    <option value="">Junho</option>
+                    <option value="">Julho</option>
+                    <option value="">Agosto</option>
+                    <option value="">Setembro</option>
+                    <option value="">Outubro</option>
+                    <option value="">Novembro</option>
+                    <option value="">Dezembro</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputCartao">Número do cartão</label>
+                  <input class="form-control" type="text" id="inputCartao" placeholder="5555 5555 5555 555">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputCartao">Código de Segurança</label>
+                  <input class="form-control" type="text" id="inputCartao" placeholder="XXX">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade py-4" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+              <p class="lead">Clique em contratar plano que enviaremos um boleto para o seu e-mail.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">
+            Concordo com os <a href="#">termos e condições.</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn btn-lg">Contratar Plano</button>
 
       </form>
 
-      <div class="col-lg-5">
-        <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+      <div class="col-lg-5 mx-auto mb-5 order-first order-lg-1">
+        <h2 class="h6 text-primary ">PLANO ESCOLHIDO</h2>
         <div class="bg-light rounded p-4 box-shadow">
           <h2 class="">Platinum <span class="badge badge-success">Novo</span></h2>
           <ul class="lista-plano list-unstyled">
